@@ -122,7 +122,7 @@ def SaveFileToDrive (writeFile: str):
 
     print("\n \nName and save the XYZ File to your preffered Location:")
 
-    output_path = filedialog.asksaveasfilename(defaultextension=".xyz", filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
+    output_path = filedialog.asksaveasfilename(defaultextension=".xyz", filetypes=[("XYZ File", "*.xyz"), ("All files", "*.*")])
 
     with open(output_path, 'w') as file:
         # Write the data to the file
